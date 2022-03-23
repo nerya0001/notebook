@@ -1,5 +1,6 @@
 #include <iostream>
 #include <string>
+#include <cctype>
 #include <vector>
 #include <unordered_map>
 #include "Notebook.hpp"
@@ -9,19 +10,17 @@ using namespace ariel;
 using namespace std;
 
 Notebook::Notebook() {
-    // vector<char> row(100);
-    // unordered_map<int, row> page;
-    // this->nbook[1] = page;
+    /
 }
 
-void Notebook::write(int page, int row, int column, Direction, string str) {
-    // if (Direction == Horizontal) {
-    //     for (int i = 0; i < strlen(str); i++) {
-    //         this->nbook[page][row][column + i] = str[i];
+void Notebook::write(int page, int row, int column, Direction d, string str) {
+    // if (d == Direction::Horizontal) {
+    //     for (int i = 0; i < str.length(); i++) {
+    //         this->nbook[page][row].at(column + i)= str.at(i);
     //     }
     // } else {
-    //     for (int i = 0; i < strlen(str); i++) {
-    //         this->nbook[page][row + i][column] = str[i];
+    //     for (int i = 0; i < str.length(); i++) {
+    //         this->nbook[page][row + i].at(column)= str.at(i);
     //     }   
     // }
 }
