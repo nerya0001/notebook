@@ -1,4 +1,6 @@
 #include <string>
+#include <vector>
+#include <unordered_map>
 #include "Direction.hpp"
 
 using namespace std;
@@ -7,6 +9,8 @@ using ariel::Direction;
 
 namespace ariel {
     class Notebook {
+
+        unordered_map<int, unordered_map<int, vector<char>>> nbook;
 
         public:
 
