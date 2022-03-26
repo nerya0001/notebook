@@ -10,7 +10,10 @@ using namespace ariel;
 using namespace std;
 
 Notebook::Notebook() {
-    /
+//     vector<char> row(100);
+//     unordered_map<int, vector<char>> page;
+//     page[0] = row;
+//     this->nbook[0] = page;
 }
 
 void Notebook::write(int page, int row, int column, Direction d, string str) {
@@ -25,11 +28,11 @@ void Notebook::write(int page, int row, int column, Direction d, string str) {
     // }
 }
 
-string Notebook::read(int page, int row, int column, Direction, int len) {
+string Notebook::read(int page, int row, int column, Direction d, int len) {
     return "blabla";
 }
 
-void Notebook::erase(int page, int row, int column, Direction, int len) {
+void Notebook::erase(int page, int row, int column, Direction d, int len) {
 
 }
 
